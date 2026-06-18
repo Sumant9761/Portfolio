@@ -1,12 +1,9 @@
 # Sumant Kumar- Portfolio 🚀
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8f20387c-17e9-4e78-9e5c-cb3e749a9416/deploy-status)](https://sumant-dev.netlify.app/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+## Overview
 
 A premium, modern, and highly professional personal portfolio website designed for **SUMANT KUMAR** — a Full Stack Developer, AI Enthusiast, and Software Engineer. Built with a sleek dark theme, glassmorphism aesthetics, interactive particle backgrounds, and smooth responsive layouts.
+
 
 🔗 **Live Demo:** [https://sumant-dev.netlify.app/](https://sumant-dev.netlify.app/)
 📂 **GitHub Repository:** [https://github.com/Sumant9761/Portfolio](https://github.com/Sumant9761/Portfolio)
