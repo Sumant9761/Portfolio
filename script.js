@@ -214,11 +214,10 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       },
-      { threshold: 0.15 },
+      { threshold: 0.1 },
     );
 
-    items.forEach((el, i) => {
-      el.style.transitionDelay = `${i * 100}ms`;   // staggered entrance
+    items.forEach((el) => {
       observer.observe(el);
     });
   })();
