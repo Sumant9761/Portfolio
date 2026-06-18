@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sumant Kumar - Full Stack Developer, AI Enthusiast & Software Engineer. Final Year B.Tech CSE (AI) student building scalable web applications and intelligent AI-powered solutions.">
+    <meta name="keywords" content="Sumant Kumar, Full Stack Developer, Software Engineer, AI Enthusiast, React Developer, Portfolio, B.Tech CSE AI">
+    <meta name="author" content="Sumant Kumar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sumant Kumar | Full Stack Developer & AI Enthusiast">
+    <meta property="og:description" content="Portfolio of Sumant Kumar - Full Stack Developer, AI Enthusiast, and Software Engineer specializing in React.js, Java, Python, and AI technologies.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#6c63ff">
+    <title>Sumant Kumar | Full Stack Developer & AI Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-spinner"></div>
+            <span class="preloader-text">Loading Portfolio...</span>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">SK</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">🌙</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================== HERO SECTION ======================== -->
+    <section class="hero-section" id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-gradient-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <i class="fas fa-circle" style="font-size:8px;color:#00d4ff;"></i>
+                <span>Available for Opportunities</span>
+            </div>
+            <h1 class="hero-name animate-on-scroll">
+                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-name-text">Sumant Kumar</span>
+            </h1>
+            <div class="hero-headline animate-on-scroll">
+                <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-subheadline animate-on-scroll">
+                Final Year B.Tech CSE (AI) Student passionate about building scalable web applications, intelligent AI-powered solutions, and impactful digital experiences.
+            </p>
+            <p class="hero-description animate-on-scroll">
+                I am a Computer Science &amp; Engineering student specializing in Artificial Intelligence with strong expertise in Full Stack Development, React.js, Java, Python, REST APIs, Databases, and AI technologies. I enjoy solving real-world problems through innovative software solutions and continuously learning emerging technologies.
+            </p>
+            <div class="hero-buttons animate-on-scroll">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    <span>View Projects</span>
+                </a>
+                <a href="https://drive.google.com/file/d/137ejPIBSZduYxHJljFBt-2z9TlMBP57b/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="download-resume">
+                    <i class="fas fa-download"></i>
+                    <span>Download Resume</span>
+                </a>
+                <a href="#contact" class="btn btn-tertiary">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Me</span>
+                </a>
+            </div>
+            <div class="achievement-cards animate-on-scroll">
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="achievement-info">
+                        <span class="achievement-value">B.Tech</span>
+                        <span class="achievement-label">CSE (AI)</span>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-star"></i></div>
+                    <div class="achievement-info">
+                        <span class="achievement-value counter-value" data-target="7.46" data-decimals="2">0</span>
+                        <span class="achievement-label">CGPA</span>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                    <div class="achievement-info">
+                        <span class="achievement-value"><span class="counter-value" data-target="2">0</span>+</span>
+                        <span class="achievement-label">Projects</span>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="achievement-info">
+                        <span class="achievement-value">AI</span>
+                        <span class="achievement-label">Internship</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-icons">
+            <div class="floating-icon" data-speed="2" style="--delay: 0s; --x: 8%; --y: 20%;">
+                <i class="fab fa-java"></i>
+            </div>
+            <div class="floating-icon" data-speed="3" style="--delay: 1s; --x: 85%; --y: 15%;">
+                <i class="fab fa-python"></i>
+            </div>
+            <div class="floating-icon" data-speed="1.5" style="--delay: 2s; --x: 12%; --y: 70%;">
+                <i class="fab fa-react"></i>
+            </div>
+            <div class="floating-icon" data-speed="2.5" style="--delay: 0.5s; --x: 90%; --y: 65%;">
+                <i class="fab fa-github"></i>
+            </div>
+            <div class="floating-icon" data-speed="1.8" style="--delay: 1.5s; --x: 75%; --y: 80%;">
+                <i class="fas fa-brain"></i>
+            </div>
+            <div class="floating-icon" data-speed="2.2" style="--delay: 2.5s; --x: 20%; --y: 85%;">
+                <i class="fas fa-database"></i>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#about" aria-label="Scroll down">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ======================== ABOUT SECTION ======================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-user"></i> Introduction</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Get to know my journey and passion</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image-wrapper animate-on-scroll">
+                    <div class="about-image-container">
+                        <img src="profile.jpg" alt="Sumant Kumar - Full Stack Developer & AI Enthusiast" class="about-profile-img">
+                        <div class="about-image-border"></div>
+                        <div class="about-floating-badge about-badge-1">
+                            <i class="fas fa-code"></i> Developer
+                        </div>
+                        <div class="about-floating-badge about-badge-2">
+                            <i class="fas fa-brain"></i> AI
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h3 class="about-heading">A Passionate <span class="gradient-text">Developer</span> &amp; <span class="gradient-text">AI Enthusiast</span></h3>
+                    <p class="about-paragraph">
+                        I am a Final Year B.Tech student in Computer Science &amp; Engineering (Artificial Intelligence) at <strong>Noida Institute of Engineering and Technology</strong>, Greater Noida.
+                    </p>
+                    <p class="about-paragraph">
+                        My passion lies in combining software engineering and artificial intelligence to create innovative digital products. I enjoy designing scalable web applications, working with modern frontend technologies, developing backend integrations, and exploring AI-driven solutions.
+                    </p>
+                    <p class="about-paragraph">
+                        My technical expertise spans <strong>Full Stack Development, React.js, JavaScript, Java, Python, Databases, REST APIs, Firebase Authentication, Prompt Engineering, NLP, LLM Evaluation,</strong> and <strong>Machine Learning tools</strong>.
+                    </p>
+                    <p class="about-paragraph">
+                        I am actively seeking opportunities as a <strong>Software Engineer, Full Stack Developer, Backend Developer, AI Engineer, Associate Software Developer,</strong> or <strong>Graduate Engineer Trainee</strong> where I can contribute, learn, and grow professionally.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Location</span>
+                                <span class="highlight-value">India</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Degree</span>
+                                <span class="highlight-value">B.Tech CSE (AI)</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Email</span>
+                                <span class="highlight-value">sumantkumaryadav7037@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Status</span>
+                                <span class="highlight-value">Open to Work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== SKILLS SECTION ======================== -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-cogs"></i> Expertise</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Card 1: Programming Languages -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="skill-card-title">Programming Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Frontend Development -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h3 class="skill-card-title">Frontend Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Redux Toolkit</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Responsive Web Design</span>
+                        <span class="skill-tag">Modern UI Development</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Backend & APIs -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h3 class="skill-card-title">Backend &amp; APIs</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">API Integration</span>
+                        <span class="skill-tag">Firebase Authentication</span>
+                        <span class="skill-tag">Backend Development</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Databases -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3 class="skill-card-title">Databases</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">DBMS</span>
+                    </div>
+                </div>
+
+                <!-- Card 5: AI & NLP -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3 class="skill-card-title">Artificial Intelligence &amp; NLP</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">LLM Evaluation</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Sentence Transformers</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">Hugging Face Transformers</span>
+                    </div>
+                </div>
+
+                <!-- Card 6: Tools & Platforms -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h3 class="skill-card-title">Tools &amp; Platforms</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                        <span class="skill-tag">Streamlit</span>
+                    </div>
+                </div>
+
+                <!-- Card 7: Core CS -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                        <h3 class="skill-card-title">Core Computer Science</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">Data Structures &amp; Algorithms</span>
+                        <span class="skill-tag">OOPs</span>
+                        <span class="skill-tag">Operating Systems</span>
+                        <span class="skill-tag">Computer Networks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== EXPERIENCE SECTION ======================== -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Career</span>
+                <h2 class="section-title">Internship <span class="gradient-text">Experience</span></h2>
+                <p class="section-subtitle">My professional journey and contributions</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div class="experience-title-group">
+                                <h3 class="experience-position">Post-LLM Intern</h3>
+                                <span class="experience-company">
+                                    <i class="fas fa-building"></i> Ethara AI
+                                </span>
+                            </div>
+                            <div class="experience-duration">
+                                <i class="fas fa-calendar-alt"></i> March 2026 – May 2026
+                            </div>
+                        </div>
+                        <div class="experience-body">
+                            <ul class="experience-list">
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    Evaluated Large Language Model outputs for accuracy, reasoning quality, and reliability across diverse real-world prompts and datasets.
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    Conducted prompt evaluation, response benchmarking, and quality analysis to identify hallucinations, factual inaccuracies, and logical inconsistencies.
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    Improved prompt engineering workflows and evaluation strategies, contributing to enhanced model performance and better user experiences.
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    Worked on Natural Language Understanding, analytical reasoning tasks, and structured response validation processes.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="experience-tags">
+                            <span class="tag">LLM Evaluation</span>
+                            <span class="tag">Prompt Engineering</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">AI Testing</span>
+                            <span class="tag">Quality Analysis</span>
+                            <span class="tag">Model Benchmarking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== PROJECTS SECTION ======================== -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Some of the projects I've built with passion</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: FilmoraX -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-image-overlay">
+                            <div class="project-image-content">
+                                <i class="fas fa-film"></i>
+                                <span>FilmoraX</span>
+                            </div>
+                        </div>
+                        <div class="project-number">01</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-content-header">
+                            <span class="project-label">Featured Project</span>
+                            <h3 class="project-title">FilmoraX – AI Powered Movie Recommendation System</h3>
+                        </div>
+                        <p class="project-description">
+                            Built a Netflix-inspired AI movie recommendation platform that provides personalized movie suggestions using GPT-powered recommendations. Integrated TMDB REST APIs for real-time movie data, posters, trailers, and detailed information. Implemented Firebase Authentication for secure login and session handling. Optimized state management using Redux Toolkit and custom React Hooks.
+                        </p>
+                        <div class="project-tech">
+                            <span class="project-tech-tag">React.js</span>
+                            <span class="project-tech-tag">Redux Toolkit</span>
+                            <span class="project-tech-tag">Tailwind CSS</span>
+                            <span class="project-tech-tag">Firebase Auth</span>
+                            <span class="project-tech-tag">TMDB API</span>
+                            <span class="project-tech-tag">GPT API</span>
+                        </div>
+                        <div class="project-features">
+                            <h4 class="project-features-title">Key Features</h4>
+                            <div class="project-features-grid">
+                                <span class="project-feature"><i class="fas fa-check"></i> AI Movie Recommendations</span>
+                                <span class="project-feature"><i class="fas fa-check"></i> Authentication System</span>
+                                <span class="project-feature"><i class="fas fa-check"></i> Real-Time Movie Data</span>
+                                <span class="project-feature"><i class="fas fa-check"></i> Trailer Playback</span>
+                                <span class="project-feature"><i class="fas fa-check"></i> Search Functionality</span>
+                                <span class="project-feature"><i class="fas fa-check"></i> Responsive Design</span>
+                                <span class="project-feature"><i class="fas fa-check"></i> State Management</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://filmorax-a18ca.web.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Sumant9761/FilmoraX" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: OPTIMUS -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-image-overlay">
+                            <div class="project-image-content">
+                                <i class="fas fa-microphone-alt"></i>
+                                <span>OPTIMUS</span>
+                            </div>
+                        </div>
+                        <div class="project-number">02</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-content-header">
+                            <span class="project-label">Featured Project</span>
+                            <h3 class="project-title">OPTIMUS – Personal Voice Assistant</h3>
+                        </div>
+                        <p class="project-description">
+                            Developed a Python-based voice assistant capable of understanding natural language commands and automating various user tasks. Designed a modular architecture supporting reminders, task management, workflow automation, and voice-driven interactions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="project-tech-tag">Python</span>
+                            <span class="project-tech-tag">Speech Recognition</span>
+                            <span class="project-tech-tag">NLP</span>
+                        </div>
+                        <div class="project-features">
+                            <h4 class="project-features-title">Key Features</h4>
+                            <div class="project-features-grid">
+                                <span class="project-feature"><i class="fas fa-check"></i> Voice Commands</span>
+                                <span class="project-feature"><i class="fas fa-check"></i> Task Automation</span>
+                                <span class="project-feature"><i class="fas fa-check"></i> Reminder Management</span>
+                                <span class="project-feature"><i class="fas fa-check"></i> Natural Language Processing</span>
+                                <span class="project-feature"><i class="fas fa-check"></i> Modular Architecture</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                            <a href="#" class="btn btn-secondary btn-sm">
+                                <i class="fas fa-info-circle"></i> Project Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== EDUCATION SECTION ======================== -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Learning</span>
+                <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+                <p class="section-subtitle">Academic qualifications and achievements</p>
+            </div>
+            <div class="education-timeline">
+                <!-- Education 1: B.Tech -->
+                <div class="education-item animate-on-scroll">
+                    <div class="education-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-year">2022 – 2026</div>
+                        <h3 class="education-degree">B.Tech Computer Science &amp; Engineering (Artificial Intelligence)</h3>
+                        <p class="education-institute">
+                            <i class="fas fa-university"></i>
+                            Noida Institute of Engineering and Technology
+                        </p>
+                        <p class="education-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Greater Noida
+                        </p>
+                        <div class="education-details">
+                            <span class="education-score">
+                                <i class="fas fa-star"></i> CGPA: <strong>7.46</strong>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education 2: Class XII -->
+                <div class="education-item animate-on-scroll">
+                    <div class="education-dot">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-year">2021</div>
+                        <h3 class="education-degree">Class XII</h3>
+                        <p class="education-institute">
+                            <i class="fas fa-university"></i>
+                            UP Board
+                        </p>
+                        <div class="education-details">
+                            <span class="education-score">
+                                <i class="fas fa-star"></i> Score: <strong>88%</strong>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education 3: Class X -->
+                <div class="education-item animate-on-scroll">
+                    <div class="education-dot">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-year">2019</div>
+                        <h3 class="education-degree">Class X</h3>
+                        <p class="education-institute">
+                            <i class="fas fa-university"></i>
+                            UP Board
+                        </p>
+                        <div class="education-details">
+                            <span class="education-score">
+                                <i class="fas fa-star"></i> Score: <strong>90%</strong>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== CERTIFICATIONS SECTION ======================== -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-certificate"></i> Credentials</span>
+                <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+                <p class="section-subtitle">Professional certifications and courses</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Python Certification</h3>
+                        <p class="cert-org">
+                            <i class="fas fa-building"></i> IBM
+                        </p>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Certified</span>
+                    </div>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">JavaScript Essentials</h3>
+                        <p class="cert-org">
+                            <i class="fas fa-building"></i> Infosys
+                        </p>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== ACHIEVEMENTS SECTION ======================== -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-trophy"></i> Highlights</span>
+                <h2 class="section-title">Key <span class="gradient-text">Achievements</span></h2>
+                <p class="section-subtitle">Skills and experiences that set me apart</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-item animate-on-scroll">
+                    <div class="achievement-item-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="achievement-item-content">
+                        <h3>Full Stack Development</h3>
+                        <p>Strong Full Stack Development skills using React.js, APIs, and modern web technologies.</p>
+                    </div>
+                    <div class="achievement-item-number">01</div>
+                </div>
+                <div class="achievement-item animate-on-scroll">
+                    <div class="achievement-item-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="achievement-item-content">
+                        <h3>AI & LLM Expertise</h3>
+                        <p>Hands-on experience in AI, Prompt Engineering, and LLM Evaluation.</p>
+                    </div>
+                    <div class="achievement-item-number">02</div>
+                </div>
+                <div class="achievement-item animate-on-scroll">
+                    <div class="achievement-item-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <div class="achievement-item-content">
+                        <h3>DSA Proficiency</h3>
+                        <p>Strong understanding of Data Structures and Algorithms.</p>
+                    </div>
+                    <div class="achievement-item-number">03</div>
+                </div>
+                <div class="achievement-item animate-on-scroll">
+                    <div class="achievement-item-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="achievement-item-content">
+                        <h3>Development Best Practices</h3>
+                        <p>Experience with Git, GitHub, Firebase, Databases, and Software Development best practices.</p>
+                    </div>
+                    <div class="achievement-item-number">04</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== CONTACT SECTION ======================== -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Connect</span>
+                <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing Together</span></h2>
+                <p class="section-subtitle">I am open to Software Engineering, Full Stack Development, AI Engineering, Backend Development, and Graduate Engineer opportunities.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info animate-on-scroll">
+                    <h3 class="contact-info-title">Contact Information</h3>
+                    <p class="contact-info-desc">Feel free to reach out. I'd love to hear from you!</p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Email</span>
+                                <a href="mailto:sumantkumaryadav7037@gmail.com" class="contact-card-value">sumantkumaryadav7037@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Phone</span>
+                                <a href="tel:+917037366838" class="contact-card-value">+91 7037366838</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sumant-kumar-3b0a08266" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Sumant9761" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/917037366838" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:sumantkumaryadav7037@gmail.com" class="social-link" aria-label="Email" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contact-form">
+                        <h3 class="form-title">Send a Message</h3>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Discussion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." rows="5" required></textarea>
+                        </div>
+                        <div class="form-message" id="form-message"></div>
+                        <button type="submit" class="submit-btn">
+                            <span class="submit-btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer footer-minimal">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sumant Kumar. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
