@@ -1,4 +1,4 @@
-# Premium Personal Portfolio 🚀
+# Sumant Kumar- Portfolio 🚀
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8f20387c-17e9-4e78-9e5c-cb3e749a9416/deploy-status)](https://sumant-dev.netlify.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -71,7 +71,6 @@ Let's collaborate or build something amazing together!
 - **LinkedIn:** [@sumant-kumar-3b0a08266](https://www.linkedin.com/in/sumant-kumar-3b0a08266)
 - **GitHub Profile:** [@Sumant9761](https://github.com/Sumant9761)
 - **WhatsApp Direct:** [Chat on WhatsApp](https://wa.me/917037366838)
-- **Email:** [sumantkumaryadav7037@gmail.com](mailto:sumantkumaryadav7037@gmail.com)
 
 ---
 
